@@ -1,0 +1,63 @@
+@media (min-width: 1000px) {
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .rgb {
+    width: 250px;
+    height: 140px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  .rgb {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .rgb {
+    width: 100% !important;
+    height: 100vh !important;
+  }
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  height: 100vh;
+}
+
+.rgb {
+  width: 250px;
+  height: 140px;
+  background: rgb(255, 0, 0);
+  animation: gradient 60s linear infinite;
+}
+
+@keyframes gradient {
+  from {
+    background: rgb(255, 0, 0);
+  }
+  10% {
+    background: rgb(255, 100, 0);
+  }
+  35% {
+    background: rgb(255, 255, 0);
+  }
+  50% {
+    background: rgb(0, 255, 0);
+  }
+  60% {
+    background: rgb(0, 255, 221);
+  }
+  80% {
+    background: rgb(0, 0, 255);
+  }
+  90% {
+    background: rgb(175, 0, 255);
+  }
+  to {
+    background: rgba(255, 0, 255);
+  }
+}
