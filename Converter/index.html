@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="converter.js"></script>
+    <title>Document</title>
+  </head>
+  <body onload="convertCurrency()">
+    <div id="box">
+      <h2>Currency Converter</h2>
+      <table>
+        <tr>
+          <td>
+            <input
+              id="fromAmount"
+              type="text"
+              size="15"
+              value="1"
+              onkeyup="convertCurrency();"
+            />
+          </td>
+          <td>
+            <select id="from" onchange="convertCurrency()">
+              <option value="EUR">Euro (EUR)</option>
+              <option value="USD" selected>US Dollar</option>
+              <option value="UAH">Ukraine Hryvnia (UAH)</option>
+              <option value="CNY">Chines Yuan (CNY)</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><input id="toAmount" type="text" size="15" disabled /></td>
+          <td>
+            <select id="to" onchange="convertCurrency()">
+              <option value="EUR">Euro (EUR)</option>
+              <option value="USD">US Dollar</option>
+              <option value="UAH" selected>Ukraine Hryvnia (UAH)</option>
+              <option value="CNY">Chines Yuan (CNY)</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

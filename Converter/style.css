@@ -1,0 +1,16 @@
+#box {
+  width: 330px;
+  height: 150px;
+  margin: 0 auto;
+  border: 3px solid black;
+  background: rgb(179, 182, 142);
+}
+
+h2 {
+  text-align: center;
+  color: antiquewhite;
+}
+
+table {
+  margin: 0 auto;
+}
